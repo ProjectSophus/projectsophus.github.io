@@ -41,8 +41,15 @@ body {
     padding: 20px;
 }
 
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .category {
     border: solid blue;
     padding: 10px;
     margin: 10px;
+    flex-basis: 40%;
+    flex-grow: 1;
 }
