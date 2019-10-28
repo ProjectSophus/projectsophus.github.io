@@ -43,15 +43,29 @@ body {
 
 .boxes {
     display: flex;
+    flex-direction: column;
+}
+
+.boxrow {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .box {
-    border: solid blue;
+    border: solid red;
     padding: 10px;
     margin: 10px;
     flex-basis: 40%;
     flex-grow: 1;
+}
+
+.boxblue {
+    border: solid blue;
+}
+
+.boxgreen {
+    border: solid green;
 }
 
 .complexities {
@@ -69,4 +83,44 @@ body {
 
 .complexity:hover {
     background-color: #CCCCCC;
+}
+
+#map {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map-container {
+    flex-basis: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.map-box {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid gray;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.map-box-element {
+    text-align: center;
+    border: solid gray;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    flex-basis: 20%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
